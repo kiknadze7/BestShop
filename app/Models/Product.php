@@ -10,4 +10,9 @@ class Product extends Model
 {
     use HasFactory;
     use SoftDeletes;
+
+
+
+    //this for რაღაცნაირი ველების გადაცემისთვის
+    protected $fillable = ['name', 'description', 'price', 'stock'];
 }
